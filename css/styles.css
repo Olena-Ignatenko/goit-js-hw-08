@@ -59,3 +59,19 @@ body {
 .modal-img {
   border-radius: 5px;
 }
+
+
+.descr {
+  color: #fff;
+  background: rgba(0,0,0,.8);
+  padding: 10px;
+  font-size: 1rem;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 800;
+  opacity: 1;
+  display: block;
+}

@@ -78,8 +78,9 @@ function createGallery(galleryItems) {
       class="gallery-image"
       src="${preview}"
       data-source="${original}"
+      data-description="${description}"
       alt="${description}"
-    />
+    >
   </a>
 </li>`;
     })
@@ -102,8 +103,9 @@ function selectGalleryEl(event) {
 
   const instance = basicLightbox.create(
     `<div class="modal">
-    <img class="modal-img" src="${original}" data-source="${original}" alt="${description}" width="800" height="600">
-    </div>`,
+    <img class="modal-img" src="${original}" alt="${description}" width="800" height="600">
+    </div>
+    <div class="descr" data-initial-display="">${description}</div>`,
     {
       onShow: () => {
         window.addEventListener("keydown", onKeydownEsc);
